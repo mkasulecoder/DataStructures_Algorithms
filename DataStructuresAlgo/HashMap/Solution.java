@@ -1,5 +1,13 @@
 package DataStructuresAlgo.HashMap;
 
+/**
+ * HASHMAP IS FASTER THAN ARRAYLIST
+ * Arrays have linear time insertion and deletion, which means you need to shift the elements to make space or fill the gap when you add or remove an element in O(n) time.
+ *  Hash tables have constant time insertion and deletion, which means you can add or remove an element in a hash table by using its key in O(1) time.
+ * 
+ * While the HashMap will be slower at first and take more memory, it will be faster for large values of n. 
+ * The reason the ArrayList has O(n) performance is that every item must be checked for every insertion to make sure it is not already in the list.
+ */
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -77,7 +85,7 @@ public class Solution {
         // Compute new values for keys
         hashMapList.put("RW", null);
         hashMapList.put("RW", null);
-        System.out.println("List with duplicates: " + List.of(hashMapList));
+        System.out.println("Hashmap will not allow duplicates: " + List.of(hashMapList));
         System.out.println('\n');
 
         hashMapList.compute("RW", (key, value) -> "Kigali");

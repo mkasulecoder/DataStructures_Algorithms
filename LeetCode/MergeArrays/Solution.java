@@ -1,4 +1,4 @@
-package MergeArrays;
+package LeetCode.MergeArrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;

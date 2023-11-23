@@ -1,4 +1,4 @@
-package RemoveElement;
+package LeetCode.RemoveElement;
 
 import java.util.ArrayList;
 import java.util.List;

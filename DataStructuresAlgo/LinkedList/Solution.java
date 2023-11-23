@@ -1,5 +1,8 @@
 package DataStructuresAlgo.LinkedList;
 
+/**
+ * LinkedList should be used where modifications to a collection are frequent like addition/deletion operations. LinkedList is much faster as compare to ArrayList in such cases. In case of read-only collections or collections which are rarely modified, ArrayList is suitable.
+ */
 import java.util.*;
 
 public class Solution {
@@ -64,6 +67,8 @@ public class Solution {
         // add items to list
         linkedList.add(99);
         linkedList.add(99);
+        linkedList.add(null);
+
         System.out.println("List with duplicates: " + List.of(linkedList));
 
         // remove all items from list

@@ -1,4 +1,4 @@
-package RemoveDuplicates;
+package LeetCode.RemoveDuplicates;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;

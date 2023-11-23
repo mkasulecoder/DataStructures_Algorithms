@@ -19,6 +19,7 @@ public class Solution {
         hashSet.add("Orange");
 
         hashSet.add("Apple"); // Duplicate, will not be added
+        hashSet.add(null); // null will be added
 
         // Print the HashSet
 
