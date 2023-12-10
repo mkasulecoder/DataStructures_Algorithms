@@ -1,14 +1,14 @@
 package LeetCode.KeepTwoDuplicates;
 
-import java.util.List;
+import java.util.*;
 
 public class Solution {
 
     public static void main(String[] args) {
-        int[] array = { 0, 0, 1, 1, 1, 1, 2, 2, 2, 3, 3, 3 };
+        int[] array = { 0, 0, 1, 1, 2, 2, 2, 3, 3, 3 };
         System.out.println(keepTwoDuplicates(array));
-        ;
-    }                                          
+        System.out.println(Arrays.toString(array));
+    }
 
     public static int keepTwoDuplicates(int[] nums) {
         int count = 0;
@@ -20,9 +20,9 @@ public class Solution {
             if (i == nums.length || a == nums[i]) {
                 // remove this element from array since its a duplicate
                 // replace it with element a
-                nums[i] = nums[i - 3];  
+                nums[i] = nums[i - 3];
                 count++;
-                
+
             }
         }
 

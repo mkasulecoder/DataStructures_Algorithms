@@ -39,10 +39,11 @@ Constraints:
 1 <= s.length <= 15
 s contains only the characters ('I', 'V', 'X', 'L', 'C', 'D', 'M').
 It is guaranteed that s is a valid roman numeral in the range [1, 3999]. */
+package FreddieMacInt;
 
 public class Roman {
     public static void main(String[] args) {
-        String word = "IX";
+        String word = "XII";
         System.out.println("Roman Convertor");
         System.out.println(romanConverter(word));
     }
@@ -87,6 +88,7 @@ public class Roman {
                     // skip the next value since it has been computed above
                     i++;
                 } else {
+                    // increment and add the next value
                     romanTotal += currentValueOfLetter;
                 }
             } else {
